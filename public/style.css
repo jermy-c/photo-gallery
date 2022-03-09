@@ -1,0 +1,10 @@
+.gallery {
+    width: 100px;
+}
+
+.photo {
+    width: 100px;
+}
+.hidden {
+    display: none;
+}

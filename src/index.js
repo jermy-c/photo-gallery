@@ -1,6 +1,5 @@
 import "modaal";
 
-
 fetch("https://picsum.photos/v2/list",{
     method: 'GET'
 }).then( res => res.json())
@@ -9,20 +8,33 @@ fetch("https://picsum.photos/v2/list",{
 })
 
 function addPhoto(obj) {
-    let container = document.getElementById('photo-container');
+    let container = document.body;
+    //let container = document.getElementById('photo-container');
     let link = document.createElement('a');
+    let span = document.createElement('span');
     let img = document.createElement('img');
 
     link.href = obj.download_url;
-    link.classList.add('gallery');
     link.setAttribute('data-group','gallery');
+    link.classList.add('gallery');
+    span.innerHTML = 'Show';
+    span.classList.add('hidden');
     container.append(link);
+    link.append(span);
 
     img.src = obj.download_url;
+    img.classList.add('photo');
     link.append(img);
 
 }
 
-$('.gallery').modaal({
-    type: 'image'
-});
+setTimeout( () => {
+    $('.gallery').modaal({
+        type: 'image'
+    });
+},1000);
+
+
+
+
+
