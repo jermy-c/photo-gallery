@@ -1,0 +1,23 @@
+{
+  "name": "photo-gallery",
+  "version": "1.0.0",
+  "description": "My photo gallery app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jermy-c/photo-gallery.git"
+  },
+  "author": "Jeremy Chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jermy-c/photo-gallery/issues"
+  },
+  "homepage": "https://github.com/jermy-c/photo-gallery#readme",
+  "dependencies": {
+    "modaal": "^0.4.4",
+    "normalize": "^0.3.1"
+  }
+}
