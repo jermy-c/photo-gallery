@@ -1,4 +1,6 @@
 import "modaal";
+import 'modaal/dist/css/modaal.css';
+import './style.css';
 
 fetch("https://picsum.photos/v2/list?limit=10",{//Lorem Picsum API
     method: 'GET'
