@@ -1,6 +1,6 @@
 import "modaal";
 
-fetch("https://picsum.photos/v2/list",{
+fetch("https://picsum.photos/v2/list?limit=10",{//Lorem Picsum API
     method: 'GET'
 }).then( res => res.json())
 .then( result => {
@@ -8,8 +8,8 @@ fetch("https://picsum.photos/v2/list",{
 })
 
 function addPhoto(obj) {
-    let container = document.body;
-    //let container = document.getElementById('photo-container');
+    //let container = document.body;
+    let container = document.getElementById('photo-container');
     let link = document.createElement('a');
     let span = document.createElement('span');
     let img = document.createElement('img');
@@ -34,6 +34,9 @@ setTimeout( () => {
     });
 },1000);
 
+import {camelCase} from 'lodash';
+
+console.log(camelCase('hello world'));
 
 
 

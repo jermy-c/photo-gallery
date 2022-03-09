@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jermy-c/photo-gallery#readme",
   "dependencies": {
     "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
     "modaal": "^0.4.4",
     "normalize": "^0.3.1"
   },

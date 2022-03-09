@@ -1,10 +1,31 @@
-.gallery {
-    width: 100px;
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 1px 5px 2px lightgray;
+    overflow: hidden;
+    position: sticky;
+    text-align: center;
+    padding: 10px;
+    top: 0px;
+    background-color: #fff;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .photo {
-    width: 100px;
+    max-width: 46%;
+    margin: 2%;
+    box-shadow: 0 0 5px 2px lightgray;
+    border-radius: 10px;
 }
+
 .hidden {
     display: none;
 }
